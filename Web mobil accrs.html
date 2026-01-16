@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoAcces | Aksesoris Mobil Premium & Modifikasi</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Open Sans', sans-serif; scroll-behavior: smooth; overflow-x: hidden; }
+        h1, h2, h3, .navbar-brand { font-family: 'Montserrat', sans-serif; font-weight: 700; }
+        
+        /* Navbar */
+        .navbar { background-color: rgba(0, 0, 0, 0.95); padding: 15px 0; }
+        
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1486497395402-74117e35a69b?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover; background-position: center;
+            height: 80vh; display: flex; align-items: center; color: white; text-align: center;
+        }
+
+        /* Utility */
+        .section-padding { padding: 80px 0; }
+        .line-red { width: 80px; height: 3px; background-color: #e63946; margin: 20px auto; }
+        .btn-primary { background-color: #e63946; border: none; padding: 12px 30px; border-radius: 50px; font-weight: bold; }
+        .btn-primary:hover { background-color: #c1121f; }
+
+        /* Cards */
+        .product-card, .testimonial-card {
+            border: none; border-radius: 15px; transition: 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        .product-card:hover { transform: translateY(-10px); }
+        .testimonial-card { background: #f8f9fa; padding: 30px; height: 100%; }
+        .user-img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid #e63946; }
+
+        /* Contact & Map */
+        .contact-info i { color: #e63946; font-size: 1.5rem; margin-right: 15px; }
+        .map-container { border-radius: 15px; overflow: hidden; height: 400px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white;
+            width: 60px; height: 60px; border-radius: 50px; display: flex; align-items: center;
+            justify-content: center; font-size: 30px; z-index: 100; text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-car-side me-2"></i>AUTOACCES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-light ms-lg-3" href="#kontak">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-3 mb-4">Ubah Mobil Biasa Jadi Luar Biasa</h1>
+            <p class="lead mb-5">Pusat aksesoris mobil premium di Jakarta. Kualitas Grade A untuk gaya maksimal.</p>
+            <a href="#produk" class="btn btn-primary btn-lg">Lihat Produk</a>
+        </div>
+    </header>
+
+    <section class="container section-padding" id="produk">
+        <div class="text-center mb-5">
+            <h2>Produk Unggulan</h2>
+            <div class="line-red"></div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=500&auto=format&fit=crop" class="card-img-top" alt="Bodykit">
+                    <div class="card-body text-center">
+                        <h5>Full Bodykit Kit</h5>
+                        <p class="text-muted small">Aerodinamis dan presisi tinggi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1552650278-b0a444737667?q=80&w=500&auto=format&fit=crop" class="card-img-top" alt="LED">
+                    <div class="card-body text-center">
+                        <h5>Smart LED Lighting</h5>
+                        <p class="text-muted small">Cahaya tajam dan hemat energi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1598453472149-6f176b6c0e86?q=80&w=500&auto=format&fit=crop" class="card-img-top" alt="Jok">
+                    <div class="card-body text-center">
+                        <h5>Premium Seat Cover</h5>
+                        <p class="text-muted small">Kenyamanan kulit sintetis eksklusif.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light section-padding" id="testimoni">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Apa Kata Mereka?</h2>
+                <div class="line-red"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="text-warning mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="fst-italic">"Pemasangan bodykit sangat rapi. Mobil saya jadi kelihatan jauh lebih sporty!"</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <img src="https://i.pravatar.cc/150?u=1" class="user-img me-3">
+                            <div><h6 class="mb-0">Andi W.</h6><small>Honda Civic</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card border-top border-danger border-4">
+                        <div class="text-warning mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="fst-italic">"Lampu LED-nya mantap, terang banget buat jalan malam. Pelayanan ramah."</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <img src="https://i.pravatar.cc/150?u=2" class="user-img me-3">
+                            <div><h6 class="mb-0">Budi S.</h6><small>Toyota Fortuner</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="text-warning mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <p class="fst-italic">"Ganti interior di sini beneran mewah bahannya. Gak nyesel modif di AutoAcces."</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <img src="https://i.pravatar.cc/150?u=3" class="user-img me-3">
+                            <div><h6 class="mb-0">Siska P.</h6><small>Mitsubishi Xpander</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container section-padding" id="kontak">
+        <div class="text-center mb-5">
+            <h2>Hubungi Kami</h2>
+            <div class="line-red"></div>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <form class="bg-white p-4 shadow rounded-4">
+                    <div class="mb-3">
+                        <label class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="nama@email.com">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Pesan / Jenis Mobil</label>
+                        <textarea class="form-control" rows="4" placeholder="Tuliskan aksesoris yang Anda cari..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Kirim Pesan</button>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <div class="contact-info mb-4">
+                    <p><i class="fas fa-map-marker-alt"></i> Ruko Otomotif Blok A-12, Jakarta Pusat [cite: 1]</p>
+                    <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@autoacces.com</p>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31730.407661555546!2d106.811776!3d-6.175392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2db45873d%3A0x2036496469277c57!2sJakarta%20Pusat%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <h4 class="mb-3">AUTOACCES</h4>
+            <div class="mb-3">
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="small text-muted mb-0">&copy; 2026 AutoAcces. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/628123456789" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
